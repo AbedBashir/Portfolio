@@ -49,7 +49,7 @@ const Data = [
     title: 'Bank Account',
     github: 'https://github.com',
     demo: 'https://github.com'
-  },
+  }
 ]
 
 const Portfolio = () => {
