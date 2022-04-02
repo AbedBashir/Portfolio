@@ -3,6 +3,7 @@ import './testimonials.css'
 import AVTR1 from '../../assets/avatar1.jpg'
 import AVTR2 from '../../assets/avatar2.jpg'
 import AVTR3 from '../../assets/avatar3.jpg'
+import AVTR4 from '../../assets/avatar4.jpg'
 
 // import Swiper core and required modules
 import {Pagination} from 'swiper';
@@ -31,6 +32,11 @@ const Data = [
     name: 'Guest 3',
     review:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu varius arcu, id iaculis est.Aliquam eget eros lacinia, egestas est at, scelerisque arcu. Proin dapibus urna leo, id lobortis ipsum dapibus non. Curabitur ut neque at elit mattis placerat in sit amet lectus.'
   },  
+  {
+    avatar: AVTR4,
+    name: 'Guest 4',
+    review:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu varius arcu, id iaculis est.Aliquam eget eros lacinia, egestas est at, scelerisque arcu. Proin dapibus urna leo, id lobortis ipsum dapibus non. Curabitur ut neque at elit mattis placerat in sit amet lectus.'
+  },
 ]
 const Testimonials = () => {
   return (
@@ -39,15 +45,10 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
 
       <Swiper className="container testimonials__container"
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={50}
-            slidesPerView={3}
-            navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
-      >
+            modules={[Pagination]}
+            spaceBetween={40}
+            slidesPerView={1}
+            pagination={{ clickable: true }}>
         {
           Data.map(({avatar, name, review}, index) =>{
             return(
