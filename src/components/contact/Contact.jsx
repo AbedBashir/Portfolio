@@ -12,12 +12,14 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+    emailjs.sendForm('service_13h8qlk', 'template_se1x42b', form.current, '1Gw7x9mDdnr2JoUOI')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+
+      e.target.reset();
   };
 
   return (
