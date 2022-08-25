@@ -21,24 +21,26 @@ const About = () => {
             <article className="about__card">
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>3+ Years Experience</small>
+              <small>2+ Years Experience</small>
             </article>            
             <article className="about__card">
               <FiUsers className='about__icon'/>
               <h5>Clients</h5>
-              <small>300+ Clients Worldwide</small>
+              <small>20+ Clients Worldwide</small>
             </article>            
             <article className="about__card">
               <VscFolderLibrary className='about__icon'/>
               <h5>Projects</h5>
-              <small>80+ Completed Projects</small>
+              <small>10+ Completed Projects</small>
             </article>
           </div>
 
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum diam massa, sed viverra lacus venenatis ac. 
-          Quisque quis facilisis mi, id volutpat urna. Morbi ut libero mollis, ornare nisi quis, finibus massa. 
-          Mauris feugiat felis vel mauris posuere, at ultrices diam accumsan.
+          An independent and self-motivated mid-level Web
+          Developer with proven and tested Projects, using
+          WordPress and Shopify.
+          Studied 3 years of computer engineering then switched to computer
+          science when I found out that I am passionated more into software.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
